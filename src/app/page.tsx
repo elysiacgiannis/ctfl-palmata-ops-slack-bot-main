@@ -1,4 +1,6 @@
 export default function Home() {
+  console.log('App token loaded:', Boolean(process.env.SLACK_APP_TOKEN));
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 dark:bg-zinc-950">
       <main className="w-full max-w-lg px-8 py-16">
