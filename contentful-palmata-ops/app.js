@@ -7,8 +7,7 @@ config();
 /** Initialization */
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
-  socketMode: true,
-  appToken: process.env.SLACK_APP_TOKEN,
+  signingSecret: process.env.SLACK_SIGNING_SECRET,
   logLevel: LogLevel.DEBUG,
   clientOptions: {
     slackApiUrl: process.env.SLACK_API_URL,
@@ -21,7 +20,7 @@ registerListeners(app);
 /** Start the Bolt App */
 (async () => {
   try {
-    await app.start();
+    await app.start(process.env.PORT || 3000);
     app.logger.info('⚡️ Bolt app is running!');
   } catch (error) {
     app.logger.error('Failed to start the app', error);
