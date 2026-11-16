@@ -1,6 +1,6 @@
 {
   "display_information": {
-    "name": "Contentful Palmata Ops",
+    "name": "Contentful Palmata Ops (local)",
     "description": "Manage Contentful content and research Palmata insights from Slack."
   },
   "features": {
@@ -10,19 +10,19 @@
       "messages_tab_read_only_enabled": false
     },
     "bot_user": {
-      "display_name": "Contentful Ops Bot",
+      "display_name": "Contentful Ops Bot (local)",
       "always_online": false
     },
     "slash_commands": [
       {
         "command": "/connect",
-        "url": "https://ctfl-palmata-ops-slack-bo-git-fc3760-elysia-personal-contentful.vercel.app//api/webhooks/slack",
+        "url": "https://ctfl-palmata-ops-slack-bot-main.vercel.app//api/webhooks/slack",
         "description": "Connect Contentful and Palmata to this workspace.",
         "should_escape": false
       },
       {
         "command": "/disconnect",
-        "url": "https://ctfl-palmata-ops-slack-bo-git-fc3760-elysia-personal-contentful.vercel.app//api/webhooks/slack",
+        "url": "https://ctfl-palmata-ops-slack-bot-main.vercel.app//api/webhooks/slack",
         "description": "Disconnect Contentful and Palmata from this workspace.",
         "should_escape": false
       }
@@ -50,10 +50,10 @@
     "org_deploy_enabled": false,
     "interactivity": {
       "is_enabled": true,
-      "request_url": "https://ctfl-palmata-ops-slack-bo-git-fc3760-elysia-personal-contentful.vercel.app//api/webhooks/slack"
+      "request_url": "https://ctfl-palmata-ops-slack-bot-main.vercel.app//api/webhooks/slack"
     },
     "event_subscriptions": {
-      "request_url": "https://ctfl-palmata-ops-slack-bo-git-fc3760-elysia-personal-contentful.vercel.app//api/webhooks/slack",
+      "request_url": "https://referee-undiluted-item.ngrok-free.dev/slack/events",
       "bot_events": [
         "app_home_opened",
         "app_mention",
